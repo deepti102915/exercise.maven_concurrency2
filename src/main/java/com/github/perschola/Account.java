@@ -3,7 +3,7 @@ package com.github.perschola;
 public class Account implements Runnable {
         private double accountBalance = 50.0;
         private final double withdrawalAmount = 10.0;
-        private int j = 3;
+        private int j = 1;
 
         @Override
         public void run() {
@@ -23,7 +23,7 @@ public class Account implements Runnable {
                         System.out.println("Not enough in account for " + Thread.currentThread().getName() + " to withdraw. Account balance = " + accountBalance);
                     }
                 }
-                j = j +1;
+                j=j+1;
             }
 
         }
